@@ -1,0 +1,114 @@
+:root{
+    --primary: #ff6464;
+    --secondary: #00a8cc;
+    --dark: #21243d;
+    --light: #8695A4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+.container{
+ width: 1152px;
+background: #FFF;
+}
+
+header nav{
+padding: 27px 60px;
+display: flex;
+justify-content: flex-end;
+gap: 93px;
+}
+
+header nav a{
+color: #000;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+}
+
+
+header h1{
+color: var(--dark);
+font-size: 44px;
+font-weight: 700;
+line-height: 60px;
+}
+
+
+header h3{
+padding-top: 50px;
+padding-bottom: 6px;
+color: var(--dark);
+font-size: 30px;
+font-weight: 500;
+}
+
+header span{
+padding-bottom: 10px;
+color: var(--dark);
+font-size: 20px;
+font-weight: 400;
+}
+
+header p{
+max-width: 500px;
+color: var(--dark);
+}
+
+.brands{
+    display: flex;
+    fill: var(--dark);
+    margin-left: 600px;
+    gap: 35px;
+}
+
+header nav .mobile-icon {
+    display: none;
+    
+}
+/* mobile */
+@media only screen and ( max-width: 375px) {
+    header nav a {
+   display: none;
+    }
+    header nav .mobile-icon{
+        display: block;
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and ( max-width: 327px){
+    header .parent{
+         flex-wrap: nowrap;
+          justify-content: center;
+          text-align: start;
+         /* padding-top: 33px; */
+         /* gap: 43px; */
+         
+     }
+ }
+
+ @media only screen and ( max-width: 62px){
+    header h1{
+    font-size: 62px;
+    
+    }
+ }
+
+ @media only screen and ( max-width: 312px){
+    header h3{
+    font-size: 312px;
+    }
+ }
+
+ @media only screen and ( max-width: 339px){
+  .container p{
+    max-inline-size: 339px;
+  }
+ }

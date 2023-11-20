@@ -1,0 +1,145 @@
+:root{
+    --primary: #ff6464;
+    --secondary: #00a8cc;
+    --dark: #21243d;
+    --light: #8695A4;   
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+.container{
+    max-width: 886px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav {
+   padding: 27px 60px;
+   display: flex;
+   justify-content: flex-end;
+   gap: 33px;
+   align-items: center;
+}
+
+header nav a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header nav .mobile-icon {
+    display: none;
+}
+/* mobile */
+@media only screen and ( max-width: 576px) {
+    header nav a {
+   display: none;
+    }
+    header nav .mobile-icon{
+        display: block;
+    }
+}
+
+header .parent{
+    display: flex;
+    gap: 106px;
+    padding-top: 140px;
+    padding-bottom: 71px;
+}
+
+@media only screen and ( max-width: 576px){
+    header .parent{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+        padding-top: 33px;
+        gap: 43px;
+    }
+}
+
+header .parent-item h1{
+    color: var(--dark);
+    font-size: 44px;
+    font-weight: 700px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+header .parent-item p{
+    color: var(--dark);
+}
+
+header .parent-item button{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--primary);
+    padding: 13px 20px;
+    margin-top: 20px;
+}
+
+.post{
+    background: #edf7fa;
+    padding-bottom: 32px;
+    padding-top: 7px;
+}
+
+.post .parent{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.post .space-btw{
+    justify-content: space-between;
+}
+
+.post .space-btw span{
+    color: var(--dark);
+    font-size: 22px;
+   line-height: 60px;
+
+}
+
+.post .space-btw a{
+    color: var(--secondary  );
+    text-decoration: none;
+}
+
+.post .parent-item{
+    background: white;
+    padding: 24px 22px 7px 22px ;
+    width: 100%;
+}
+
+.post .parent-item h3{
+    color: var(--dark);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.post .parent-item span{
+   color: var(--dark);
+   font-size: 18px;
+   display: block;
+}
+
+.post .parent-item p{
+    color: var(--dark);
+    height: 117px;
+    overflow: hidden;
+}
+
+
